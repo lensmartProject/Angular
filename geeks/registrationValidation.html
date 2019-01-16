@@ -1,0 +1,29 @@
+
+<form action="www.google.com">
+   
+      <h1>Register</h1>
+    
+      <hr>
+  
+      <label for="username"><b>UserName</b></label>
+      <input type="text" placeholder="Enter Username" name="UserName" required>
+  
+     
+  
+      <input type="text" placeholder="Enter Contact" name="Phone Number" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9" required>
+    </hr>
+
+   
+    <input type="text" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required placeholder="Enter you Email">
+       
+  
+      
+    <input id="password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
+
+    <input id="password_two" name="password_two" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters' : '');" placeholder="Verify Password" required>
+
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  
+    
+  </form>
